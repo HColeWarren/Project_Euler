@@ -2,7 +2,7 @@
 title: "Project Euler"
 author: "H. Cole Warren"
 date: December 22, 2018
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
