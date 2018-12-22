@@ -13,14 +13,17 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 
 ``` r
-number_line <- 1:1000
+# All natural numbers <1000
+number_line <- 1:999
 
+# Test if numbers are divisible by 3 or 5
 logical_vector <- number_line %% 3 || number_line %% 5
 
+# Subset numbers by logical vector and sum the output
 sum(number_line[logical_vector])
 ```
 
-    ## [1] 500500
+    ## [1] 499500
 
 Even Fibonacci numbers
 ----------------------
