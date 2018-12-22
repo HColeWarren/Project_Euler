@@ -1,4 +1,3 @@
-# Project_Euler
-Solutions to problems from ProjectEuler.net
+# Project Euler
 
-This is a line from RStudio
+ProjectEuler.net is an online archive of challenging mathematical/computer programming problems. Here I will post my ongoing attempts at solving some of these problems.
