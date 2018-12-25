@@ -46,7 +46,7 @@ sum_multiples_below <- function(multiples, below) {
   # Map divis_by to each multiple and store each logical vector in a list
   logi_list <- map(multiples, divis_by, S = number_line)
   index <- reduce(logi_list, `|`) # Collapse the list into a single indexing vector,
-  sum(number_line[index]) # index the number_line with it, and return the sum
+  sum(number_line[index])         # index the number_line with it, and return the sum
 }
 
 sum_multiples_below(multiples = c(3, 5), below = 1000)
