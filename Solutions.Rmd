@@ -33,22 +33,20 @@ This solution can be further generalized. Instead of finding the sum of all mult
 ```{r p1.2}
 library(purrr)
 
-# Check to see if numbers in the set, S, are multiples of m
+# Generate a logical vector that is TRUE
+# for each element in the set, S, that is divisible by m
 divis_by <- function(m, S) {
-  !(S %% m)
+  !(S %% m) # If remainder is zero, returns TRUE
 }
 
 sum_multiples_below <- function(multiples, below) {
   # Generate number line
   number_line <- 1:(below-1)
   
-  # Generate a logical vector for each multiple and store them all in a list
+  # Map divis_by to each multiple and store each logical vector in a list
   logi_list <- map(multiples, divis_by, S = number_line)
-  
-  # Collapse the list into a single indexing vector,
-  # index the number_line with it, and return the sum
-  index <- reduce(logi_list, `|`)
-  sum(number_line[index])
+  index <- reduce(logi_list, `|`) # Collapse the list into a single indexing vector,
+  sum(number_line[index]) # index the number_line with it, and return the sum
 }
 
 sum_multiples_below(multiples = c(3, 5), below = 1000)
