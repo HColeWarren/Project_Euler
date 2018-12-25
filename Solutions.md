@@ -82,7 +82,7 @@ fib <- function(n = 20) {
 # The 34th term is the first term greater than 4 million
 fib_seq <- fib(n = 33)
 
-logi_vec <- as.logical(fib_seq %% 2)
+logi_vec <- !(fib_seq %% 2)
 
 sum(fib_seq[logi_vec])
 ```
