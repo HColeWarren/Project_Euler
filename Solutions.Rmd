@@ -24,7 +24,7 @@ number_line <- 1:999
 # Test if numbers are divisible by 3 or 5
 logical_vector <- !(number_line %% 3) | !(number_line %% 5)
 
-# Subset numbers using logical vector and sum the output
+# Index number_line using logical_vector and sum the output
 sum(number_line[logical_vector])
 ```
 
