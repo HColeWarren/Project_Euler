@@ -1,8 +1,10 @@
 ---
 title: "Largest palindrome product"
 author: "H. Cole Warren"
-date: "8/27/2019"
-output: rmarkdown::github_document
+date: "September 22, 2019"
+output:
+  github_document:
+    html_preview: false
 ---
 
 ```{r setup, include=FALSE}

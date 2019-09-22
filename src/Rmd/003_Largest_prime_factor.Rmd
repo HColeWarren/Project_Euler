@@ -1,0 +1,24 @@
+---
+title: "Largest Prime Factor"
+author: "H. Cole Warren"
+date: "September 22, 2019"
+output:
+  github_document:
+    html_preview: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+
+```{r p3}
+# First generate a sequence if prime numbers
+
+# Check primes between the first prime number and half the number in question (inclusive) to see if they will divide the number
+
+# 
+```

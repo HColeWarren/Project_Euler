@@ -1,7 +1,7 @@
 Multiples of 3 and 5
 ================
 H. Cole Warren
-December 25, 2018
+September 22, 2019
 
 If we list all the natural numbers below 10 that are multiples of 3 or
 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
@@ -23,10 +23,9 @@ sum(number_line[logical_vector])
 
     ## [1] 233168
 
-This solution can be further generalized. Instead of finding the sum of
-all multiples of 3 or 5 below 1000, the sum of all multiples of 4, 11,
-13, or 25 below 10000 could be found. Or the sum of any arbitrary set of
-multiples below any arbitrary number.
+Further generalized; instead of the sum of all multiples of 3 or 5 below
+1000, find the sum of all multiples of 4, 11, 13, or 25 below 10000. Or
+the sum of any set of multiples below any number.
 
 ``` r
 library(purrr)
