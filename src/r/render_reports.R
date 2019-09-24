@@ -8,4 +8,4 @@ library(here)
 rmd_files <- here::here("src", "Rmd", list.files())
 
 # Render each and store the output in the output folder
-map(rmd_files, ~ rmarkdown::render(.x, output_dir = here("output")))
+map(rmd_files, ~ rmarkdown::render(.x, output_dir = here::here("output")))
